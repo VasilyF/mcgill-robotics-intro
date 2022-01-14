@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>propulsion</name>
+  <version>0.0.1</version>
+  <description>Package responsible for moving the robot</description>
+  <maintainer email="vasilyfedotov12@gmail.com">Vasily Fedotov</maintainer>
+  <license>MIT</license>
+	  
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>TODO:avr-gcc</buildtool_depend>
+</package>

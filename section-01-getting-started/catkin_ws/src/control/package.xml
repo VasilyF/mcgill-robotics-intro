@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>control</name>
+  <version>0.0.1</version>
+  <description>
+	  Responsible for controlling the robot at a high level.
+	  This includes logic that dictates the velocity and responds
+	  to input from the sensor.
+  </description>
+  <maintainer email="vasilyfedotov12@gmail.com">Vasily Fedotov</maintainer>
+  <license>MIT</license>
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <!-- Examples: -->
+  <!-- Use depend as a shortcut for packages that are both build and exec dependencies -->
+  <!--   <depend>roscpp</depend> -->
+  <!--   Note that this is equivalent to the following: -->
+  <!--   <build_depend>roscpp</build_depend> -->
+  <!--   <exec_depend>roscpp</exec_depend> -->
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use build_export_depend for packages you need in order to build against this package: -->
+  <!--   <build_export_depend>message_generation</build_export_depend> -->
+  <!-- Use buildtool_depend for build tool packages: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- Use exec_depend for packages you need at runtime: -->
+  <!--   <exec_depend>message_runtime</exec_depend> -->
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
+  <!-- Use doc_depend for packages you need only for building documentation: -->
+  <!--   <doc_depend>doxygen</doc_depend> -->
+
+	  
+  <!-- Dependencies (tools) needed to do the actual building -->
+  <buildtool_depend>catkin</buildtool_depend>
+	  
+  <!-- Dependencies needed at build time -->
+
+  <!-- 		System dependencies (files that should exist on the computer unrelated to ROS) -->
+  <!-- 			C/C++ dependencies (headers, libraries, executables) -->  
+  <!-- Not present -->
+  <!--Note: Python modules (ie. numpy) are not needed to build (compile files for) a --> 
+  <!--ROS package since python is an interpreted language and these files only need to be -->
+  <!--present during execution time. -->
+
+  <!-- 		ROS/Catkin Packages -->
+  <!-- 			ROS Packages containing  C/C++ dependencies -->  
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <!-- 			Catkin  Packages -->  
+  <build_depend>message_generation</build_depend>
+
+  <!-- Dependencies needed at execution time -->
+
+  <!-- 		System dependencies -->
+  <!-- 			System C/C++ dependencies -->  
+  <!-- Not present -->
+  <!-- 			System Python modules -->
+  <!-- Note: the name to use can be found here - https://github.com/ros/rosdistro/blob/master/rosdep/python.yaml --> 
+  <!-- Not present -->
+
+  <!-- 		ROS Packages -->
+  <!-- 			ROS packages containing C/C++ dependencies -->  
+  <!-- Not present -->
+  <!-- 			ROS packages containing Python modules -->
+  <exec_depend>rospy</exec_depend>
+  <!-- 			Catkin  Packages -->  
+  <exec_depend>message_runtime</exec_depend>>
+</package>
